@@ -40,23 +40,64 @@ describe('sayHello',function () {
         expect(sayHello(false)).toBe('Hello World')
     });
 });
+
+
+
 describe('isFive', function () {
-    it('should return the value of 5', function () {
-        expect(isFive()).toBe(5);
+    it('should never return not 5', function () {
+        expect(isFive()).toBe(false)
+    });
+    it('should return the boolean value true', function () {
+        expect(isFive(5)).toBe(true)
+    });
+    it('should never be a string', function () {
+        expect(isFive()).not.toBe('')
+    });
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe('function')
+    });
+    it('should return a number', function () {
+        expect(typeof isFive("value")).toBe("number");
     });
 });
+
+
+
 describe('isEven', function(){
+    it('should not be a string', function () {
+        expect(isEven()).toBe('')
+    });
+    it('should pass in the parameters x', function () {
+        expect(isEven()).toBe('% === 0')
+    });
+    it('should be a defined function', function () {
+        expect(typeof isEven).toBe('function')
+    });
     it('should return a number that is even', function () {
         expect(isEven()).toBe()
     });
 })
 
+
+
 describe('isVowel', function () {
-    it('should return a string that is a vowel', function () {
-        expect(isVowel()).toBe()
+    it('should return the vowels in an array', function () {
+        expect(isVowel()).toBe([])
+    });
+    it('should be a defined function', function () {
+        expect(typeof isVowel).toBe('function')
+    });
+    it('should return all of the vowels', function () {
+        expect(isVowel()).toBe('a','e','i','o','u')
     });
 });
+
+
+
 describe('add', function() {
+    it('should be a defined function', function () {
+        expect(typeof add).toBe('function')
+    });
     it('should return a number sum', function () {
         expect(add()).toBe()
     });

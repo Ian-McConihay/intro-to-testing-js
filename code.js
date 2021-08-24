@@ -19,3 +19,15 @@ function sayHello(input){
         return 'Hello ' + input;
     }
 }
+function isFive(x){
+return x === 5
+}
+function isEven(x){
+  return x % 2 === 0
+}
+function isVowel(){
+
+}
+function add(){
+
+}
