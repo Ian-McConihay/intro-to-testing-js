@@ -23,11 +23,13 @@ function isFive(x){
 return x === 5
 }
 function isEven(x){
-  return x % 2 === 0
+  if(x % 2 === 0) {
+      return true
+  }
 }
 function isVowel(){
-
+return ['a','e', 'i', 'o', 'u']
 }
-function add(){
-
+function add(x){
+return x + 1
 }

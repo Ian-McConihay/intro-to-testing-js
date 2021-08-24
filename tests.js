@@ -65,17 +65,17 @@ describe('isFive', function () {
 
 describe('isEven', function(){
     it('should not be a string', function () {
-        expect(isEven()).toBe('')
+        expect(isEven()).not.toBe('')
     });
-    it('should pass in the parameters x', function () {
-        expect(isEven()).toBe('% === 0')
+    it('should return a number that is even', function () {
+        expect(isEven("number")).toBe('% === 0')
     });
     it('should be a defined function', function () {
         expect(typeof isEven).toBe('function')
     });
-    it('should return a number that is even', function () {
-        expect(isEven()).toBe()
-    });
+    // it('should return a number that is even', function () {
+        // expect(isEven()).toBe()
+    // });
 })
 
 
