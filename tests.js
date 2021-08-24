@@ -33,5 +33,31 @@ describe('sayHello',function () {
     it('should return a string called "Hello Pat" when called', function () {
         expect(sayHello('Pat')).toBe('Hello Pat')
     });
+    it('should return true when a string called "Hello World" is called', function () {
+        expect(sayHello(true)).toBe('Hello World')
+    });
+    it('should return false when a string called "Hello World" is called', function () {
+        expect(sayHello(false)).toBe('Hello World')
+    });
 });
+describe('isFive', function () {
+    it('should return the value of 5', function () {
+        expect(isFive()).toBe(5);
+    });
+});
+describe('isEven', function(){
+    it('should return a number that is even', function () {
+        expect(isEven()).toBe()
+    });
+})
 
+describe('isVowel', function () {
+    it('should return a string that is a vowel', function () {
+        expect(isVowel()).toBe()
+    });
+});
+describe('add', function() {
+    it('should return a number sum', function () {
+        expect(add()).toBe()
+    });
+});

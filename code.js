@@ -13,5 +13,9 @@ function helloWorld() {
 // }
 //Refactored sayHello
 function sayHello(input){
-    return 'Hello ' + input;
+    if(input === true) {
+        return 'Hello World'
+    } else {
+        return 'Hello ' + input;
+    }
 }
